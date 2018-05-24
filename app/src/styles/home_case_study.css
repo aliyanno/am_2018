@@ -1,0 +1,30 @@
+.study-header {
+  grid-column: 3 / 6;
+  grid-row: auto;
+}
+.study-body {
+  display: grid;
+  grid-row: auto;
+  grid-column: 1 / 9;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". content content . image image image image";
+  margin-top: 2em;
+}
+.study-line {
+  align-self: center;
+  margin-left: -10px;
+}
+.study-image {
+  grid-area: image;
+  width: 100%;
+}
+.study-content {
+  grid-area: content;
+  align-self: end;
+}
+.study-sky {
+  background-image: url('../assets/sky-hero2.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}

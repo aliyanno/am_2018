@@ -1,0 +1,24 @@
+.hero {
+  padding-top: 180px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+}
+.hero-header {
+  grid-column: 3 / 8;
+  grid-row: auto;
+}
+.hero-body {
+  display: grid;
+  grid-row: auto;
+  grid-column: 2 / 8;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  background: rgba(255,255,255,0.8);
+  border-radius: 4px;
+  margin-top: 5em;
+}
+.hero-body-content {
+  grid-column: 2 / 6;
+}
