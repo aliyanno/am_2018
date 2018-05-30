@@ -1,24 +1,45 @@
 .hero {
-  padding-top: 180px;
+  padding-top: 160px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
 }
 .hero-header {
-  grid-column: 3 / 8;
+  grid-column: 2 / 9;
   grid-row: auto;
+}
+@media screen and (min-width: 920px) {
+  .hero-header {
+    grid-column: 3 / 8;
+    grid-row: auto;
+  }
 }
 .hero-body {
   display: grid;
   grid-row: auto;
-  grid-column: 2 / 8;
+  grid-column: 1 / 9;
 
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 
   background: rgba(255,255,255,0.8);
   border-radius: 4px;
-  margin-top: 5em;
+  margin-top: 1em;
+}
+@media screen and (min-width: 920px) {
+  .hero-body {
+    grid-column: 2 / 8;
+    grid-row: auto;
+    margin-top: 5em;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 .hero-body-content {
-  grid-column: 2 / 6;
+  grid-column: 2 / 8;
+  padding: 1em 0;
+}
+@media screen and (min-width: 920px) {
+  .hero-body-content {
+    grid-column: 2 / 6;
+    padding: 1em 0;
+  }
 }

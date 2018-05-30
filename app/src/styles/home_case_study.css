@@ -1,30 +1,74 @@
 .study-header {
-  grid-column: 3 / 6;
+  grid-column: 3 / 7;
   grid-row: auto;
+}
+@media screen and (min-width: 920px) {
+  .study-header.right {
+    grid-column: 5 / 9;
+  }
 }
 .study-body {
   display: grid;
   grid-row: auto;
   grid-column: 1 / 9;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-areas: ". content content . image image image image";
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". image ."
+    ". content .";
   margin-top: 2em;
+}
+@media screen and (min-width: 920px) {
+  .study-body {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: ". content content image image image image .";
+  }
+}
+@media screen and (min-width: 920px) {
+  .study-body.right {
+    grid-template-areas: ". image image image image content content .";
+  }
 }
 .study-line {
   align-self: center;
   margin-left: -10px;
 }
+@media screen and (min-width: 920px) {
+  .study-line.right {
+    margin-left: 0;
+    margin-right: -10px;
+  }
+}
 .study-image {
   grid-area: image;
   width: 100%;
 }
+.study-image.gobbler {
+  width: 75%;
+}
 .study-content {
   grid-area: content;
   align-self: end;
+  margin-top: 1em;
 }
-.study-sky {
-  background-image: url('../assets/sky-hero2.png');
+.study{
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+}
+@media screen and (min-width: 920px) {
+  .study.right {
+    background-position: left;
+  }
+}
+@media screen and (min-width: 920px) {
+  .study-sky {
+    background-image: url('../assets/sky-hero2.png');
+  }
+  .study-gobbler {
+    background-image: url('../assets/gobbler-hero.png');
+  }
+  .study-bos {
+    background-image: url('../assets/bos-hero.png');
+  }
 }

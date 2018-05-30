@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../styles/home_hero.css'
 
 const HomeHero = () => (
   <div className="hero">

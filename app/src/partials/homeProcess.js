@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import '../App.css'
-import '../styles/three_column_content.css'
+import HomeSection from './layouts/homeSection.js'
 
 const HomeProcess = ({ styleName }) => (
-  <div className="home-section">
+  <HomeSection>
     <div className="three-column-content">
       <div className="three-column-step">
         <h5 className="step-number">01</h5>
@@ -43,7 +42,7 @@ const HomeProcess = ({ styleName }) => (
         And will often get my hands in the Javascript.</div>
       </div>
     </div>
-  </div>
+  </HomeSection>
 )
 
 export default HomeProcess
