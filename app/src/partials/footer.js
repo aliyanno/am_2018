@@ -1,8 +1,10 @@
 import React from 'react'
-import HomeSection from './layouts/homeSection.js'
+import Section from './layouts/section.js'
+import AnimatedLink from './component/animatedLink.js'
 
 const Footer = ({ styleName }) => (
-  <HomeSection styleName="footer">
+  <Section styleName="footer">
+    <a name="anchor-contact" />
     <div className="footer-body">
       <div className="footer-social">
         <h5 className="footer-link">Linked in</h5>
@@ -24,15 +26,14 @@ const Footer = ({ styleName }) => (
         <h6>Aliya Marder, 2018</h6>
       </div>
       <div className="footer-navigation">
-        <h5 className="footer-link">Home</h5>
-        <h5 className="footer-link">Process</h5>
-        <h5 className="footer-link">work</h5>
-        <h5 className="footer-link">gallery</h5>
-        <h5 className="footer-link">thoughts</h5>
-        <h5 className="footer-link">Contact</h5>
+        <AnimatedLink styleName="footer-link"><a to="/">Home</a></AnimatedLink>
+        <AnimatedLink styleName="footer-link"><a href="/#anchor-work">work</a></AnimatedLink>
+        <AnimatedLink styleName="footer-link"><a to="/gallery">gallery</a></AnimatedLink>
+        <AnimatedLink styleName="footer-link"><a to="/thoughts">thoughts</a></AnimatedLink>
+        <AnimatedLink styleName="footer-link"><a href="/#anchor-contact">contact</a></AnimatedLink>
       </div>
     </div>
-  </HomeSection>
+  </Section>
 )
 
 export default Footer

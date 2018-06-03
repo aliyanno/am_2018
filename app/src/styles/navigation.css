@@ -1,3 +1,38 @@
-.navigation {
+.site-navigation {
+  display: none;
+}
+@media screen and (min-width: 920px) {
+  .site-navigation {
+    position: absolute;
+    display: block;
+    margin-left: 2em;
+    text-align: right;
+  }
+}
+.site-link {
+  display: inline-block;
+  margin: 1em;
+}
+@media screen and (min-width: 920px) {
+  .site-link {
+    display: block;
+  }
+}
+.site-link:first-child > a:hover {
+  box-shadow: inset 0 0px 0 white, inset 0 -10px 0 #FF4B4B80;
+}
+.site-link:nth-child(2) > a:hover {
+  box-shadow: inset 0 0px 0 white, inset 0 -10px 0 #4400FF80;
+}
+.site-link:nth-child(3) > a:hover {
+  box-shadow: inset 0 0px 0 white, inset 0 -10px 0 #64CB2280;
+}
+.site-link:nth-child(4) > a:hover {
+  box-shadow: inset 0 0px 0 white, inset 0 -10px 0 #58585880;
+}
+.site-link:nth-child(5) > a:hover {
+  box-shadow: inset 0 0px 0 white, inset 0 -10px 0 #FF4B4B;
+}
+a:active {
 
 }

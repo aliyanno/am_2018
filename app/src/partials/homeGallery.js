@@ -1,10 +1,10 @@
 import React from 'react'
 import screens from '../assets/gobbler-screens.png'
 import line from '../assets/red-line.svg'
-import HomeSection from './layouts/homeSection.js'
+import Section from './layouts/section.js'
 
 const HomeGallery = ({ styleName }) => (
-  <HomeSection>
+  <Section>
     <div className="gallery-grid">
       <img className="gallery-image" src="http://placehold.it/200x200" />
       <img className="gallery-image" src="http://placehold.it/200x200" />
@@ -31,7 +31,7 @@ const HomeGallery = ({ styleName }) => (
         </div>
       </div>
     </div>
-  </HomeSection>
+  </Section>
 )
 
 export default HomeGallery

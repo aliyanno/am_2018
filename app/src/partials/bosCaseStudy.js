@@ -1,10 +1,10 @@
 import React from 'react'
 import screens from '../assets/bos-screens.png'
 import line from '../assets/green-line.svg'
-import HomeSection from './layouts/homeSection.js'
+import Section from './layouts/section.js'
 
 const BosCaseStudy = ({ styleName }) => (
-  <HomeSection styleName="study study-bos">
+  <Section styleName="offset-background-image study-bos">
     <img className="study-line" src={line} />
     <div className="study-header">
       <h1>
@@ -23,7 +23,7 @@ const BosCaseStudy = ({ styleName }) => (
         </div>
       </div>
     </div>
-  </HomeSection>
+  </Section>
 )
 
 export default BosCaseStudy

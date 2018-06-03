@@ -1,0 +1,27 @@
+.animated-link > a {
+  position: relative;
+  transform: perspective(1px) translateZ(0);
+  display: inline-block;
+}
+.animated-link.blue > a:before {
+  background-color: #4400ffbd;
+}
+.animated-link.green > a:before {
+  background-color: #64cb22f0;
+}
+.animated-link > a:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  bottom: 4px;
+  left: 0;
+  z-index: -1;
+  right: 100%;
+  background-color: #ff4b4b;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.animated-link > a:hover:before {
+  right: 0;
+}

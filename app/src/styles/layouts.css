@@ -1,0 +1,50 @@
+.home-section {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+}
+@media screen and (min-width: 920px) {
+  body {
+    margin: 0em 0 0 0;
+  }
+  .home-section {
+    margin: 8em 0;
+  }
+}
+.section-title {
+  grid-column: 2 / 6;
+  margin: 0 0 2em 0;
+}
+.offset-background-image {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+@media screen and (min-width: 920px) {
+  .offset-background-image.right {
+    background-position: left;
+  }
+}
+
+/*TwoImageSection*/
+.image-box-one {
+  grid-column: 1 / 4;
+}
+.image-box-two {
+  grid-column: 4 / 9;
+}
+
+/*TextAndImageSection*/
+.text-section {
+  grid-column: 2 / 5;
+}
+.image-section {
+  grid-column: 5 / 9;
+}
+.text-section.reverse {
+  grid-column: 5 / 8;
+}
+.image-section.reverse {
+  grid-column: 1 / 4;
+}

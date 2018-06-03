@@ -1,9 +1,9 @@
 import React from 'react'
 
-const HomeSection = ({ children, styleName }) => (
+const Section = ({ children, styleName }) => (
   <div className={`home-section ${styleName}`}>
     {children}
   </div>
 )
 
-export default HomeSection
+export default Section

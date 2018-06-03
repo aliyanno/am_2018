@@ -1,10 +1,10 @@
 import React from 'react'
 import screens from '../assets/gobbler-screens.png'
 import line from '../assets/red-line.svg'
-import HomeSection from './layouts/homeSection.js'
+import Section from './layouts/section.js'
 
 const GobblerCaseStudy = ({ styleName }) => (
-  <HomeSection styleName="study study-gobbler right">
+  <Section styleName="offset-background-image study-gobbler right">
     <img className="study-line right" src={line} />
     <div className="study-header right">
       <h1>
@@ -23,7 +23,7 @@ const GobblerCaseStudy = ({ styleName }) => (
         </div>
       </div>
     </div>
-  </HomeSection>
+  </Section>
 )
 
 export default GobblerCaseStudy

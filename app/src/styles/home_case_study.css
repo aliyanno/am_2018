@@ -4,7 +4,7 @@
 }
 @media screen and (min-width: 920px) {
   .study-header.right {
-    grid-column: 5 / 9;
+    grid-column: 4 / 8;
   }
 }
 .study-body {
@@ -31,12 +31,16 @@
 }
 .study-line {
   align-self: center;
-  margin-left: -10px;
+  margin-left: -80px;
 }
 @media screen and (min-width: 920px) {
+  .study-line {
+    margin-left: -10px;
+  }
   .study-line.right {
-    margin-left: 0;
-    margin-right: -10px;
+    position: absolute;
+    right: 0;
+    margin-top: 2em;
   }
 }
 .study-image {
@@ -50,16 +54,6 @@
   grid-area: content;
   align-self: end;
   margin-top: 1em;
-}
-.study{
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-}
-@media screen and (min-width: 920px) {
-  .study.right {
-    background-position: left;
-  }
 }
 @media screen and (min-width: 920px) {
   .study-sky {

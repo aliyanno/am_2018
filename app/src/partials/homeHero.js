@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 const HomeHero = () => (
   <div className="hero">
     <div className="hero-header">
-      <h2>Design & Strategy</h2>
+      <h2>Product & Design </h2>
       <h1>Crafting experiences people love</h1>
     </div>
     <div className="hero-body">

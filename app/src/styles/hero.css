@@ -1,8 +1,13 @@
 .hero {
-  padding-top: 160px;
+  padding-top: 60px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
+}
+@media screen and (min-width: 920px) {
+  .hero {
+    padding-top: 160px;
+  }
 }
 .hero-header {
   grid-column: 2 / 9;
@@ -29,8 +34,11 @@
   .hero-body {
     grid-column: 2 / 8;
     grid-row: auto;
-    margin-top: 5em;
+    margin-top: 3em;
     grid-template-columns: repeat(6, 1fr);
+  }
+  .study.hero-body {
+    margin-top: 0;
   }
 }
 .hero-body-content {
