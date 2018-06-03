@@ -4,7 +4,7 @@ const SkyProcessFour = ({
 }) => (
   <div>
     <h5 className="step-number">04</h5>
-    <h4 className="step-title">Understanding business needs</h4>
+    <h4 className="step-title">Ambiguity? Action.</h4>
     <div className="body">
       Without a way to validate solutions early with our users, I wanted to go wide
       rather than deep on the ideas we designed.

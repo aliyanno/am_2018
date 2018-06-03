@@ -1,3 +1,11 @@
+/*Links*/
+.body.animated-link {
+  display: inline-block;
+  margin: 0;
+}
+.animated-link.light > a {
+  color: #ffffffdd;
+}
 .animated-link > a {
   position: relative;
   transform: perspective(1px) translateZ(0);
@@ -13,7 +21,7 @@
   content: "";
   position: absolute;
   height: 5px;
-  bottom: 4px;
+  bottom: 2px;
   left: 0;
   z-index: -1;
   right: 100%;
@@ -22,6 +30,34 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
+.body.animated-link > a:before {
+  bottom: 9px;
+}
 .animated-link > a:hover:before {
   right: 0;
+}
+
+/*Column Typography*/
+.step-number {
+  display: inline;
+  font-size: 1.15em;
+  margin-left: -36px;
+  margin-right: 8px;
+  letter-spacing: 0;
+}
+.step-title {
+  display: inline;
+}
+
+/*Quotes*/
+.quote-content {
+  margin: 1em 0;
+}
+@media screen and (min-width: 920px) {
+  .quote-content {
+    margin: 4em 0;
+  }
+}
+.quote-title {
+  margin: 0.5em 0;
 }

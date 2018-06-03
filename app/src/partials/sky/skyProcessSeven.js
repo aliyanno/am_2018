@@ -4,7 +4,7 @@ const SkyProcessSeven = ({
 }) => (
   <div>
     <h5 className="step-number">07</h5>
-    <h4 className="step-title">Changing behavior</h4>
+    <h4 className="step-title">Making it better</h4>
     <div className="body">
       We focused our second phase of the project on designing an experience that
       could build confidence and increase motivation.

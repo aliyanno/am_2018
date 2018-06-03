@@ -6,13 +6,24 @@ const TextAndImageSection = ({
   imageContent,
   reverse = false,
 }) => (
-  <Section>
+  <Section styleName={`${reverse && 'text-image-section-reverse'}`}>
+    {
+      reverse && (
+        <div className={`image-section ${reverse && 'reverse'}`}>
+          <img className="image-content" src={imageContent} />
+        </div>
+      )
+    }
     <div className={`text-section ${reverse && 'reverse'}`}>
       {textContent}
     </div>
-    <div className={`image-section ${reverse && 'reverse'}`}>
-      {imageContent}
-    </div>
+    {
+      reverse || (
+        <div className={`image-section ${reverse && 'reverse'}`}>
+          <img className="image-content" src={imageContent} />
+        </div>
+      )
+    }
   </Section>
 )
 

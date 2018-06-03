@@ -82,15 +82,6 @@ h5 {
 h6 {
   font-size: .75em;
 }
-.step-number {
-  display: inline;
-  font-size: 1.15em;
-  margin-left: -36px;
-  margin-right: 8px;
-}
-.step-title {
-  display: inline;
-}
 .body {
   line-height: 1.6em;
   margin: 1em 0;
@@ -108,6 +99,7 @@ h6 {
 a {
   text-decoration: none;
   transition: all 2ms;
+  color: rgba(0,0,0,.84);
   /*box-shadow: inset 0 0px 0 white, inset 0 -10px 0 #FF4B4B00;*/
 }
 a:hover {
@@ -136,9 +128,4 @@ a:visited {
 }
 .gray-shape {
   background-image: url('assets/gray-shape-small.png');
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

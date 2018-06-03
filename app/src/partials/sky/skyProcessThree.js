@@ -4,7 +4,7 @@ const SkyProcessThree = ({
 }) => (
   <div>
     <h5 className="step-number">03</h5>
-    <h4 className="step-title">Understanding business needs</h4>
+    <h4 className="step-title">Starting from scratch</h4>
     <div className="body">
       We digitized the sales contract to collect data and speed up the process
       of closing new customers.

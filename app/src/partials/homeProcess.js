@@ -13,14 +13,16 @@ const HomeProcess = ({ styleName }) => (
       <div className="three-column-step">
         <h5 className="step-number">02</h5>
         <h4 className="step-title">Facilitation</h4>
-        <div className="body">I plan research sprints to best understand the pain
-        points and motivations of those people we are focused on helping—stakeholders
-        and end-users alike.</div>
+        <div className="body">On-time and focused workshops to align the team around
+        a single vision, identify interesting problems, and generate bold ideas
+        for how to solve them.</div>
       </div>
       <div className="three-column-step">
         <h5 className="step-number">03</h5>
         <h4 className="step-title">Research</h4>
-        <div className="body"></div>
+        <div className="body">Plan research sprints to best understand the pain
+        points and motivations of those people we are focused on helping—stakeholders
+        and end-users alike.</div>
       </div>
       <div className="three-column-step">
         <h5 className="step-number">04</h5>

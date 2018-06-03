@@ -14,7 +14,7 @@ import './styles/components.css'
 import HomeView from './views/homeView.js'
 import SkyView from './views/skyView'
 import AnimatedLink from './partials/component/animatedLink.js'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 const App = () => (
   <Router>

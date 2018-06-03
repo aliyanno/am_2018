@@ -1,7 +1,12 @@
 import React from 'react'
 
-const AnimatedLink = ({ children, styleName, color }) => (
-  <h5 className={`animated-link ${styleName} ${color}`}>
+const AnimatedLink = ({
+  children,
+  styleName,
+  color,
+  light = false,
+}) => (
+  <h5 className={`animated-link ${styleName} ${color} ${light && 'light'}`}>
     {children}
   </h5>
 )
