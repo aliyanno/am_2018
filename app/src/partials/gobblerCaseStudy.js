@@ -2,6 +2,7 @@ import React from 'react'
 import screens from '../assets/gobbler-screens.png'
 import line from '../assets/red-line.svg'
 import Section from './layouts/section.js'
+import AnimatedLink from './component/animatedLink.js'
 
 const GobblerCaseStudy = ({ styleName }) => (
   <Section styleName="offset-background-image study-gobbler right">
@@ -21,6 +22,11 @@ const GobblerCaseStudy = ({ styleName }) => (
           6-week design sprint to create a ‘future-tech’ sales demo for a
           C-suite audience.
         </div>
+        <AnimatedLink>
+          <a href="mailto:aliyamarder@gmail.com&subject?casestudies">
+            Request Case Study
+          </a>
+        </AnimatedLink>
       </div>
     </div>
   </Section>

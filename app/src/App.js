@@ -22,8 +22,7 @@ const App = () => (
       <div className="site-navigation">
         <AnimatedLink><Link to="/">Home</Link></AnimatedLink>
         <AnimatedLink><a href="/#anchor-work">work</a></AnimatedLink>
-        <AnimatedLink><Link to="/gallery">gallery</Link></AnimatedLink>
-        <AnimatedLink><Link to="/thoughts">thoughts</Link></AnimatedLink>
+        <AnimatedLink><a href="/#thoughts">Gallery</a></AnimatedLink>
         <AnimatedLink><a href="/#anchor-contact">contact</a></AnimatedLink>
       </div>
 

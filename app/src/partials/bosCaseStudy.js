@@ -2,13 +2,14 @@ import React from 'react'
 import screens from '../assets/bos-screens.png'
 import line from '../assets/green-line.svg'
 import Section from './layouts/section.js'
+import AnimatedLink from './component/animatedLink.js'
 
 const BosCaseStudy = ({ styleName }) => (
   <Section styleName="offset-background-image study-bos">
     <img className="study-line" src={line} />
     <div className="study-header">
       <h1>
-        PwC Business OS
+        Business OS
       </h1>
     </div>
     <div className="study-body">
@@ -21,6 +22,11 @@ const BosCaseStudy = ({ styleName }) => (
           A 12-week project to translate the PwC business consulting experience
           into a digital solution for small businesses.
         </div>
+        <AnimatedLink color="green">
+          <a href="mailto:aliyamarder@gmail.com&subject?casestudies">
+            Request Case Study
+          </a>
+        </AnimatedLink>
       </div>
     </div>
   </Section>

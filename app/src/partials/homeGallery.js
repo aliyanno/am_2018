@@ -2,15 +2,23 @@ import React from 'react'
 import screens from '../assets/gobbler-screens.png'
 import line from '../assets/red-line.svg'
 import Section from './layouts/section.js'
+import AnimatedInlineLink from './component/animatedInlineLink.js'
+
+import Gallery1 from "../assets/gallery/gallery-tall1.png"
+import Gallery2 from "../assets/gallery/gallery-wide1.png"
+import Gallery3 from "../assets/gallery/gallery-wide2.jpg"
+import Gallery4 from "../assets/gallery/gallery-wide3.png"
 
 const HomeGallery = ({ styleName }) => (
   <Section>
+    <a name="thoughts"/>
     <div className="gallery-grid">
-      <img className="gallery-image" src="http://placehold.it/200x200" />
-      <img className="gallery-image" src="http://placehold.it/200x200" />
-      <img className="gallery-image" src="http://placehold.it/200x200" />
-      <img className="gallery-image" src="http://placehold.it/200x200" />
-      <img className="gallery-image" src="http://placehold.it/200x200" />
+      <img className="gallery-image gallery-image-long" src={Gallery1} />
+      <img className="gallery-image gallery-image-top-wide" src={Gallery2} />
+      <div className="gallery-image gallery-image-mid-wide">
+        <img src={Gallery4} />
+      </div>
+      <img className="gallery-image gallery-image-low-wide" src={Gallery3} />
     </div>
     <div className="gallery-header right">
       <h1>
@@ -18,16 +26,27 @@ const HomeGallery = ({ styleName }) => (
       </h1>
     </div>
     <div className="article-content">
+      <h5>Full Gallery coming soon</h5>
       <div className="">
-        <h5 className="button">See gallery of work</h5>
         <div>
-          <h3 className="article-title">Article</h3>
-          <h4>Article description</h4>
-          <h3 className="article-title">Article</h3>
-          <h4>Article description</h4>
-          <h3 className="article-title">Article</h3>
-          <h4>Article description</h4>
-          <h5 className="button">See all articles</h5>
+          <h3 className="article-title">How to get started as a UX and product designer</h3>
+          <AnimatedInlineLink>
+            <a href="https://we-are-next.com/episodes/aliyamarder">
+              We Are Next Podcast, April 2018
+            </a>
+          </AnimatedInlineLink>
+          <h3 className="article-title">How You Can Put Yourself on a New Career Path</h3>
+          <AnimatedInlineLink>
+            <a href="https://www.success.com/article/how-you-can-put-yourself-on-a-new-career-path">
+              Success, March 2018
+            </a>
+          </AnimatedInlineLink>
+          <h3 className="article-title">Coax Creativity Out of Your Team With These 4 Processes</h3>
+          <AnimatedInlineLink>
+            <a href="https://www.entrepreneur.com/article/310759">
+              Entrepreneur, March 2018
+            </a>
+          </AnimatedInlineLink>
         </div>
       </div>
     </div>

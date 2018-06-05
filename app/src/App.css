@@ -21,6 +21,7 @@ body {
   font-family: 'Quattrocento Sans', sans-serif;
   color: rgba(0,0,0,.84);
   font-size: 18px;
+  background: #FFFDFD;
 }
 @media screen and (min-width: 320px) {
   body {

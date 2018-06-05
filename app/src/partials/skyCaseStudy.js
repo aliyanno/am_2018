@@ -3,7 +3,6 @@ import screens from '../assets/sky-screens.png'
 import line from '../assets/blue-line.svg'
 import Section from './layouts/section.js'
 import AnimatedLink from './component/animatedLink.js'
-import { BrowserRouter as Link } from "react-router-dom";
 
 const SkyCaseStudy = ({ styleName }) => (
   <div>

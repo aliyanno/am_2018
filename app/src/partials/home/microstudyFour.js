@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimatedLink from '../component/animatedLink.js'
 
 const MicrostudyFour = () => (
   <div>
@@ -9,6 +10,11 @@ const MicrostudyFour = () => (
       How might we alleviate pains between the dispatcher and the technician
       through a conversation-based and automated interaction?
     </div>
+    <AnimatedLink>
+      <a href="https://invis.io/NJ6L10TKS">
+        See prototype
+      </a>
+    </AnimatedLink>
   </div>
 )
 

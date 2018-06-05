@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimatedLink from '../component/animatedLink.js'
 
 const MicrostudyTwo = () => (
   <div>
@@ -9,6 +10,11 @@ const MicrostudyTwo = () => (
       How might we leverage the expertise of 60 advertising experts in
       90 minutes to brainstorm the future of advertising?
     </div>
+    <AnimatedLink>
+      <a href="/Ideation.pdf">
+        See workshop agenda
+      </a>
+    </AnimatedLink>
   </div>
 )
 
