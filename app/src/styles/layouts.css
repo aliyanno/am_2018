@@ -67,7 +67,6 @@
 }
 .text-section {
   grid-column: 2 / 8;
-  margin-right: 3em;
   align-self: center;
 }
 .image-section {
@@ -85,8 +84,9 @@
     grid-column: 5 / 9;
   }
   .text-section.reverse {
-    grid-column: 5 / 9;
+    grid-column: 5 / 8;
     margin-left: 3em;
+    margin-right: 0;
   }
   .image-section.reverse {
     grid-column: 1 / 5;

@@ -14,7 +14,7 @@ const SkyProcessSeven = ({
       performance. We wanted to explore the salespeople's experience more fully.
     </div>
     <div className="body">
-      We built three testable prototypes in six weeks based on three assumptions:
+      We started our design process based on three assumptions:
       contextual information will help them sell, leaderboard will be inspiring,
       and social reinforcement will help them through the tough spots.
     </div>

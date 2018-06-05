@@ -52,7 +52,7 @@
 }
 .study-content {
   grid-area: content;
-  align-self: end;
+  align-self: center;
   margin-top: 1em;
 }
 @media screen and (min-width: 920px) {
