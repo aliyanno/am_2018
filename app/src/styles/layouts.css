@@ -93,6 +93,7 @@
   }
   .image-section {
     grid-column: 5 / 9;
+    grid-row: 1;
   }
   .text-section.reverse {
     grid-column: 5 / 8;

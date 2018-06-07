@@ -23,8 +23,8 @@ const GobblerCaseStudy = ({ styleName }) => (
           C-suite audience.
         </div>
         <AnimatedLink>
-          <a href="mailto:aliyamarder@gmail.com&subject?casestudies">
-            Request Case Study
+          <a target="_blank" href="https://aliyamarder.typeform.com/to/Jtt04p">
+            Request case study
           </a>
         </AnimatedLink>
       </div>

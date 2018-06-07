@@ -23,7 +23,7 @@ const BosCaseStudy = ({ styleName }) => (
           into a digital solution for small businesses.
         </div>
         <AnimatedLink color="green">
-          <a href="mailto:aliyamarder@gmail.com&subject?casestudies">
+          <a target="_blank" href="https://aliyamarder.typeform.com/to/Jtt04p">
             Request Case Study
           </a>
         </AnimatedLink>

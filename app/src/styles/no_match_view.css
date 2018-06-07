@@ -1,0 +1,10 @@
+.no-match-view {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../assets/no_match.svg');
+}
+.no-match-view .hero-body {
+  background: none;
+  line-height: normal;
+}
