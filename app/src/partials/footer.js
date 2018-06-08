@@ -8,6 +8,9 @@ const Footer = ({ styleName }) => (
     <a name="anchor-contact" />
     <div className="footer-body">
       <div className="footer-message">
+        <h1 className="header-soft">
+          Thank you!
+        </h1>
         <div className="body big footer-message-body">
           Thank you for taking the time to get to know me and my work.
         </div>

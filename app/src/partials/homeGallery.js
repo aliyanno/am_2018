@@ -21,7 +21,7 @@ const HomeGallery = ({ styleName }) => (
       <img className="gallery-image gallery-image-low-wide" src={Gallery3} />
     </div>
     <div className="gallery-header right">
-      <h1>
+      <h1 className="header-soft">
         Gallery & Thoughts
       </h1>
     </div>

@@ -9,13 +9,17 @@ const HomeHero = () => (
     <div className="hero-body">
       <div className="hero-body-content">
         <div className="body">
-          Hi, I'm Aliya — an experience designer and strategist. I design
-          and build successful products by addressing people's real needs.
+          Hi, I'm Aliya! I've been an product designer and strategist for the
+          past seven years. I design and build successful products by addressing
+          real needs.
         </div>
         <div className="body">
-          I lead successful teams by fostering ownership, embracing failure,
-          and promoting creativity. I want to work with passionate people on
-          meaningful problems.
+          I lead my product teams with care and empathy. I want my team to love
+          what they are doing and feel empowered to do a great job.
+        </div>
+        <div className="body">
+          With experience as a developer building production code, I bridge gaps
+          between disciplines to create successful cross-functional teams.
         </div>
       </div>
     </div>

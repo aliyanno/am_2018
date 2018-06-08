@@ -12,6 +12,7 @@ import './styles/footer.css'
 import './styles/sky_case_study.css'
 import './styles/components.css'
 import './styles/no_match_view.css'
+import './styles/home_process.css'
 import HomeView from './views/homeView.js'
 import SkyView from './views/skyView'
 import NoMatchView from './views/noMatchView.js'
@@ -23,6 +24,7 @@ const App = () => (
     <div>
       <div className="site-navigation">
         <AnimatedLink><Link to="/">Home</Link></AnimatedLink>
+        <AnimatedLink><a href="/#anchor-process">process</a></AnimatedLink>
         <AnimatedLink><a href="/#anchor-work">work</a></AnimatedLink>
         <AnimatedLink><a href="/#thoughts">Gallery</a></AnimatedLink>
         <AnimatedLink><a href="/#anchor-contact">contact</a></AnimatedLink>

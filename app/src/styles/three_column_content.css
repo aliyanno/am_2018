@@ -7,7 +7,7 @@
 @media screen and (min-width: 920px) {
   .three-column-content {
     grid-row-gap: 3em;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 .three-column-step {

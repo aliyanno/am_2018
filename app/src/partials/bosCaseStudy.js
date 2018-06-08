@@ -19,8 +19,9 @@ const BosCaseStudy = ({ styleName }) => (
          Design & strategy
         </h4>
         <div className="body">
-          A 12-week project to translate the PwC business consulting experience
-          into a digital solution for small businesses.
+          I worked with a group of six over three months to translate PwC's
+          business expertise into meaningful and digestable advice for small
+          business owners.
         </div>
         <AnimatedLink color="green">
           <a target="_blank" href="https://aliyamarder.typeform.com/to/Jtt04p">

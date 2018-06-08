@@ -26,6 +26,9 @@
 .footer-message {
   grid-area: message;
 }
+.footer-message .header-soft{
+  margin-bottom: -70px;
+}
 .footer-navigation {
   grid-area: navigation;
 }

@@ -19,8 +19,8 @@ const GobblerCaseStudy = ({ styleName }) => (
          Project & design lead
         </h4>
         <div className="body">
-          6-week design sprint to create a ‘future-tech’ sales demo for a
-          C-suite audience.
+          In a all-out sprint, I led a team of four to design a utterly delightful
+          experience to capture the imaginations of attedees at MWC 2017.
         </div>
         <AnimatedLink>
           <a target="_blank" href="https://aliyamarder.typeform.com/to/Jtt04p">

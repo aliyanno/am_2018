@@ -21,8 +21,9 @@ const SkyCaseStudy = ({ styleName }) => (
            Project & design lead
           </h4>
           <div className="body">
-            8-month project to design and build a scalable solution for a
-            distributed sales force.
+            Over eight months, I led a team of six to design, build, and test
+            seven different concepts, culminating in a cohesive and impactful
+            solution to help sales people love their jobs.
           </div>
           <AnimatedLink color="blue"><a href="/sky">Read more</a></AnimatedLink>
         </div>
