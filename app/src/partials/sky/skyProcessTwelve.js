@@ -1,7 +1,6 @@
 import React from 'react'
 
-const SkyProcessTwelve = ({
-}) => (
+const SkyProcessTwelve = () => (
   <div>
     <h5 className="step-number">12</h5>
     <h4 className="step-title">Results and handoff</h4>

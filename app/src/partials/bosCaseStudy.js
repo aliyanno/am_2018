@@ -6,14 +6,15 @@ import AnimatedLink from './component/animatedLink.js'
 
 const BosCaseStudy = ({ styleName }) => (
   <Section styleName="offset-background-image study-bos">
-    <img className="study-line" src={line} />
+    <img alt="" className="study-line" src={line} />
     <div className="study-header">
       <h1>
         Business OS
       </h1>
     </div>
     <div className="study-body">
-      <img className="study-image" src={screens} />
+      <img data-aos="fade-left" data-aos-anchor-placement="center-bottom"
+      alt="BusinessOS mobile UI screens" className="study-image" src={screens} />
       <div className="study-content">
         <h4>
          Design & strategy
@@ -24,7 +25,7 @@ const BosCaseStudy = ({ styleName }) => (
           business owners.
         </div>
         <AnimatedLink color="green">
-          <a target="_blank" href="https://aliyamarder.typeform.com/to/Jtt04p">
+          <a href="https://aliyamarder.typeform.com/to/Jtt04p">
             Request Case Study
           </a>
         </AnimatedLink>

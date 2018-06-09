@@ -61,3 +61,15 @@
 .quote-title {
   margin: 0.5em 0;
 }
+
+/*ScrollToTop*/
+.scroll-to-top-container {
+  display: hidden;
+}
+@media screen and (min-width: 920px) {
+  .scroll-to-top-container.visible {
+    display: block;
+    top: 100vh;
+    position: fixed;
+  }
+}

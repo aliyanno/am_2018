@@ -1,5 +1,4 @@
 import React from 'react'
-import Section from '../partials/layouts/section.js'
 import AnimatedLink from '../partials/component/animatedLink.js'
 
 const NoMatchView = () => (

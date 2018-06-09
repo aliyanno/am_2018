@@ -21,7 +21,7 @@
 @media screen and (min-width: 920px) {
   .study-body {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: ". content content image image image image .";
+    grid-template-areas: ". content content . image image image image";
   }
 }
 @media screen and (min-width: 920px) {

@@ -5,17 +5,19 @@ import Section from './layouts/section.js'
 import AnimatedLink from './component/animatedLink.js'
 
 const SkyCaseStudy = ({ styleName }) => (
-  <div>
-    <a name="anchor-work"/>
+  <div id="anchor-work">
     <Section styleName="offset-background-image study-sky">
-      <img className="study-line" src={line} />
+      <img alt="" className="study-line" src={line} />
       <div className="study-header">
         <h1>
           Sky Satellite
         </h1>
       </div>
       <div className="study-body">
-        <img className="study-image" src={screens} />
+        <img
+          alt="Tablet, mobile, and tv display for Sky Product"
+          data-aos="fade-left" data-aos-anchor-placement="center-bottom"
+          className="study-image" src={screens} />
         <div className="study-content">
           <h4>
            Project & design lead

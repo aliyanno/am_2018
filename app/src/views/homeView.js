@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../partials/navigation.js'
 import HomeProcess from '../partials/homeProcess.js'
 import HomeHero from '../partials/homeHero.js'
 import SkyCaseStudy from '../partials/skyCaseStudy.js'
@@ -18,7 +17,7 @@ import heroAm from '../assets/hero-am.jpg'
 
 const HomePage = ({ styleName }) => (
   <div className="App-container">
-    <img className="hero-image" src={heroAm}/>
+    <img alt="" className="hero-image" src={heroAm}/>
     <HomeHero />
     <HomeProcess styleName="home-section"/>
     <SkyCaseStudy />

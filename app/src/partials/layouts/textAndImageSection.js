@@ -4,13 +4,14 @@ import Section from './section.js'
 const TextAndImageSection = ({
   textContent,
   imageContent,
+  altText,
   reverse = false,
 }) => (
   <Section styleName={`${reverse && 'text-image-section-reverse'}`}>
     {
       reverse && (
         <div className={`image-section ${reverse && 'reverse'}`}>
-          <img className="image-content" src={imageContent} />
+          <img alt={altText} className="image-content" src={imageContent} />
         </div>
       )
     }
@@ -20,7 +21,7 @@ const TextAndImageSection = ({
     {
       reverse || (
         <div className={`image-section ${reverse && 'reverse'}`}>
-          <img className="image-content" src={imageContent} />
+          <img alt={altText} className="image-content" src={imageContent} />
         </div>
       )
     }

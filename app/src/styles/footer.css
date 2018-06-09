@@ -15,10 +15,10 @@
 }
 @media screen and (min-width: 920px) {
   .footer-body {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-areas:
-      "message message ."
-      "copyright navigation navigation";
+      "message message message ."
+      "copyright copyright navigation navigation";
     margin-top: 2em;
     align-items: end;
   }
@@ -39,7 +39,7 @@
 }
 .footer-copyright {
   grid-area: copyright;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 .animated-link.footer-link {
   display: inline-block;

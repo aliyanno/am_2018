@@ -6,14 +6,16 @@ import AnimatedLink from './component/animatedLink.js'
 
 const GobblerCaseStudy = ({ styleName }) => (
   <Section styleName="offset-background-image study-gobbler right">
-    <img className="study-line right" src={line} />
+    <img alt="" className="study-line right" src={line} />
     <div className="study-header right">
       <h1>
         PwC 'Gobbler'
       </h1>
     </div>
     <div className="study-body right">
-      <img className="study-image gobbler" src={screens} />
+      <img data-aos="fade-right" data-aos-anchor-placement="center-bottom"
+      alt="UI of the Gobbler Tablet UI"
+      className="study-image gobbler" src={screens} />
       <div className="study-content">
         <h4>
          Project & design lead
@@ -23,7 +25,7 @@ const GobblerCaseStudy = ({ styleName }) => (
           experience to capture the imaginations of attedees at MWC 2017.
         </div>
         <AnimatedLink>
-          <a target="_blank" href="https://aliyamarder.typeform.com/to/Jtt04p">
+          <a href="https://aliyamarder.typeform.com/to/Jtt04p">
             Request case study
           </a>
         </AnimatedLink>

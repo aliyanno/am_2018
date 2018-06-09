@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
+import AOS from 'aos'
 import './App.css'
 import './styles/layouts.css'
 import './styles/navigation.css'
@@ -13,30 +14,44 @@ import './styles/sky_case_study.css'
 import './styles/components.css'
 import './styles/no_match_view.css'
 import './styles/home_process.css'
+import 'aos/dist/aos.css'
+
 import HomeView from './views/homeView.js'
 import SkyView from './views/skyView'
 import NoMatchView from './views/noMatchView.js'
 import AnimatedLink from './partials/component/animatedLink.js'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link'
 
-const App = () => (
-  <Router>
-    <div>
-      <div className="site-navigation">
-        <AnimatedLink><Link to="/">Home</Link></AnimatedLink>
-        <AnimatedLink><a href="/#anchor-process">process</a></AnimatedLink>
-        <AnimatedLink><a href="/#anchor-work">work</a></AnimatedLink>
-        <AnimatedLink><a href="/#thoughts">Gallery</a></AnimatedLink>
-        <AnimatedLink><a href="/#anchor-contact">contact</a></AnimatedLink>
-      </div>
+class App extends Component {
+  componentDidMount() {
+    AOS.init({
+      disable: 'mobile',
+      duration: 1000,
+    })
+  }
 
-      <Switch>
-        <Route exact path="/" component={HomeView} />
-        <Route path="/sky" component={SkyView} />
-        <Route component={NoMatchView} />
-      </Switch>
-    </div>
-  </Router>
-)
+  render () {
+    return (
+      <Router>
+        <div id="anchor-top">
+          <div className="site-navigation">
+            <AnimatedLink><Link to="/">Home</Link></AnimatedLink>
+            <AnimatedLink><HashLink smooth to="/#anchor-process">process</HashLink></AnimatedLink>
+            <AnimatedLink><HashLink smooth to="/#anchor-work">work</HashLink></AnimatedLink>
+            <AnimatedLink><HashLink smooth to="/#anchor-gallery">Gallery</HashLink></AnimatedLink>
+            <AnimatedLink><HashLink smooth to="/#anchor-contact">contact</HashLink></AnimatedLink>
+          </div>
+
+          <Switch>
+            <Route exact path="/" component={HomeView} />
+            <Route path="/sky" component={SkyView} />
+            <Route component={NoMatchView} />
+          </Switch>
+        </div>
+      </Router>
+    )
+  }
+}
 
 export default App;

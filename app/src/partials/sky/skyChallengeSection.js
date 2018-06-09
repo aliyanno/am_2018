@@ -1,14 +1,11 @@
 import React from 'react'
-import screens from '../../assets/sky-screens.png'
-import line from '../../assets/blue-line.svg'
 import Section from '../layouts/section.js'
-import { BrowserRouter as Link } from "react-router-dom";
 import BackgroundImage from '../../assets/sky/challenge-hero.png'
 
 const SkyChallengeSection = ({ styleName }) => (
   <Section styleName="offset-background-image section-sky-challenge">
     <div className="background-image-mobile-display">
-      <img src={BackgroundImage} />
+      <img alt="" src={BackgroundImage} />
     </div>
     <div className="two-column-content">
       <div className="two-column-step">

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const HomeHero = () => (
   <div className="hero">
@@ -18,8 +18,8 @@ const HomeHero = () => (
           what they are doing and feel empowered to do a great job.
         </div>
         <div className="body">
-          With experience as a developer building production code, I bridge gaps
-          between disciplines to create successful cross-functional teams.
+          I'm also an experienced developer, shipping production level code. I
+          bridge gaps to create successful cross-functional teams.
         </div>
       </div>
     </div>
