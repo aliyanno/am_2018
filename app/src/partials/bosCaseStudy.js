@@ -1,4 +1,6 @@
 import React from 'react'
+import { Parallax } from 'react-scroll-parallax'
+
 import screens from '../assets/bos-screens.png'
 import line from '../assets/green-line.svg'
 import Section from './layouts/section.js'
@@ -13,8 +15,13 @@ const BosCaseStudy = ({ styleName }) => (
       </h1>
     </div>
     <div className="study-body">
-      <img data-aos="fade-left" data-aos-anchor-placement="center-bottom"
-      alt="BusinessOS mobile UI screens" className="study-image" src={screens} />
+      <Parallax
+        className="study-image"
+        offsetXMin={5}
+        offsetXMax={-10}
+      >
+        <img alt="BusinessOS mobile UI screens" src={screens} />
+      </Parallax>
       <div className="study-content">
         <h4>
          Design & strategy

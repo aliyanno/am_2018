@@ -1,4 +1,6 @@
 import React from 'react'
+import { Parallax } from 'react-scroll-parallax'
+
 import screens from '../assets/gobbler-screens.png'
 import line from '../assets/red-line.svg'
 import Section from './layouts/section.js'
@@ -13,9 +15,13 @@ const GobblerCaseStudy = ({ styleName }) => (
       </h1>
     </div>
     <div className="study-body right">
-      <img data-aos="fade-right" data-aos-anchor-placement="center-bottom"
-      alt="UI of the Gobbler Tablet UI"
-      className="study-image gobbler" src={screens} />
+      <Parallax
+        className="study-image gobbler"
+        offsetXMin={-20}
+        offsetXMax={-5}
+      >
+        <img alt="UI of the Gobbler Tablet UI" src={screens} />
+      </Parallax>
       <div className="study-content">
         <h4>
          Project & design lead

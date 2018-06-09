@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import AOS from 'aos'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link'
+import { ParallaxProvider } from 'react-scroll-parallax'
+
 import './App.css'
 import './styles/layouts.css'
 import './styles/navigation.css'
@@ -20,8 +24,6 @@ import HomeView from './views/homeView.js'
 import SkyView from './views/skyView'
 import NoMatchView from './views/noMatchView.js'
 import AnimatedLink from './partials/component/animatedLink.js'
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
-import { HashLink } from 'react-router-hash-link'
 
 class App extends Component {
   componentDidMount() {
@@ -34,21 +36,23 @@ class App extends Component {
   render () {
     return (
       <Router>
-        <div id="anchor-top">
-          <div className="site-navigation">
-            <AnimatedLink><Link to="/">Home</Link></AnimatedLink>
-            <AnimatedLink><HashLink smooth to="/#anchor-process">process</HashLink></AnimatedLink>
-            <AnimatedLink><HashLink smooth to="/#anchor-work">work</HashLink></AnimatedLink>
-            <AnimatedLink><HashLink smooth to="/#anchor-gallery">Gallery</HashLink></AnimatedLink>
-            <AnimatedLink><HashLink smooth to="/#anchor-contact">contact</HashLink></AnimatedLink>
-          </div>
+        <ParallaxProvider>
+          <div id="anchor-top">
+            <div className="site-navigation">
+              <AnimatedLink><Link to="/">Home</Link></AnimatedLink>
+              <AnimatedLink><HashLink smooth to="/#anchor-process">process</HashLink></AnimatedLink>
+              <AnimatedLink><HashLink smooth to="/#anchor-work">work</HashLink></AnimatedLink>
+              <AnimatedLink><HashLink smooth to="/#anchor-gallery">Gallery</HashLink></AnimatedLink>
+              <AnimatedLink><HashLink smooth to="/#anchor-contact">contact</HashLink></AnimatedLink>
+            </div>
 
-          <Switch>
-            <Route exact path="/" component={HomeView} />
-            <Route path="/sky" component={SkyView} />
-            <Route component={NoMatchView} />
-          </Switch>
-        </div>
+            <Switch>
+              <Route exact path="/" component={HomeView} />
+              <Route path="/sky" component={SkyView} />
+              <Route component={NoMatchView} />
+            </Switch>
+          </div>
+        </ParallaxProvider>
       </Router>
     )
   }

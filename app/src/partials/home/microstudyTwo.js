@@ -1,4 +1,5 @@
 import React from 'react'
+
 import AnimatedLink from '../component/animatedLink.js'
 
 const MicrostudyTwo = () => (

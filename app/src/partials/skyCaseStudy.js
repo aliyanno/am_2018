@@ -1,4 +1,6 @@
 import React from 'react'
+import { Parallax } from 'react-scroll-parallax'
+
 import screens from '../assets/sky-screens.png'
 import line from '../assets/blue-line.svg'
 import Section from './layouts/section.js'
@@ -14,10 +16,13 @@ const SkyCaseStudy = ({ styleName }) => (
         </h1>
       </div>
       <div className="study-body">
-        <img
-          alt="Tablet, mobile, and tv display for Sky Product"
-          data-aos="fade-left" data-aos-anchor-placement="center-bottom"
-          className="study-image" src={screens} />
+        <Parallax
+          className="study-image"
+          offsetXMin={5}
+          offsetXMax={-10}
+        >
+          <img alt="Tablet, mobile, and tv display for Sky Product" src={screens} />
+        </Parallax>
         <div className="study-content">
           <h4>
            Project & design lead
